@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d6e1ff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 102px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 697px;
+  width: 450px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+.order-banner img {
+  height: 220px;
+  width: 100%;
+  border-radius: 11px 11px 0 0;
+}
+
+.order-summary {
+  position: absolute;
+  top: 265px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 354px;
+  height: 78px;
+  text-align: center;
+}
+
+.order-summary h2 {
+  line-height: 37px;
+  font-weight: 900;
+  font-size: 28px;
+  color: #1f2e55;
+  text-align: center;
+}
+
+.order-summary p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #717fa6;
+}
+
+.order-plan {
+  position: absolute;
+  top: 417px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 354px;
+  background-color: #f7f9ff;
+  text-align: center;
+  border-radius: 11px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 25px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-plan-left {
+  display: flex;
+}
+
+.music-icon {
+  width: 48px;
+  margin-right: 20px;
+}
+
+.order-plan-data-top {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.order-plan-data-bottom {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.change-link {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: #382ae1;
+  text-decoration: underline;
+}
+
+.change-link:active {
+  text-decoration: none;
+  color: #766cf1;
+  font-weight: bold;
+}
+
+.order-payment-button {
+  position: absolute;
+  top: 547px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #382ae1;
+  margin: 0 auto;
+  width: 354px;
+  height: 50px;
+  border-radius: 11px;
+  box-shadow: 0 20px 20px rgba(56, 42, 225, 0.2);
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.order-payment-button:active {
+  background-color: #766cf1;
+}
+
+.order-cancel-link {
+  position: absolute;
+  top: 629px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #717fa6;
+  text-align: center;
+  cursor: pointer;
+}
+
+.order-cancel-link:active {
+  color: #1f2e55;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 327px;
+    height: 567px;
+  }
+
+  .order-banner img {
+    height: 160px;
+    width: 327px;
+  }
+
+  .order-summary {
+    top: 192px;
+    width: 263px;
+  }
+
+  .order-summary h2 {
+    top: 237px;
+    line-height: 29px;
+    font-size: 22px;
+  }
+
+  .order-summary p {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #717fa6;
+  }
+
+  .order-plan {
+    top: 336px;
+    width: 279px;
+    margin-top: 15px;
+    padding: 17px 16px 16px 16px;
+  }
+
+  .order-payment-button {
+    top: 441px;
+    width: 279px;
+  }
+
+  .order-cancel-link {
+    top: 515px;
+  }
+}
